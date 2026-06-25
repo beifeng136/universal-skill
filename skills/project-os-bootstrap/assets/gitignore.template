@@ -1,0 +1,32 @@
+# Project OS excludes
+data/
+datasets/
+outputs/
+runs/
+server_runs/
+transfer_logs/
+cache/
+.cache/
+tmp/
+temp/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Large artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.zip
+*.7z
+*.tar
+*.gz
+*.log
+
+# Keep project OS files tracked unless they contain private data.
+!project_os/

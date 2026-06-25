@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project OS Bootstrap"
+  short_description: "Install a reusable project operating system."
+  default_prompt: "Set up or audit a project operating system with state, artifacts, preflight, and restart discipline."

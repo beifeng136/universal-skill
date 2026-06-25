@@ -1,0 +1,4 @@
+interface:
+  display_name: "Living Engineering Error Loop"
+  short_description: "Turn repeated engineering failures into guardrails."
+  default_prompt: "Record this engineering failure, identify the root cause, add a guardrail, self-test it, and decide whether retry is allowed."

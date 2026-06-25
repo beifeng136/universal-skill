@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cross-Project Server Fastlane"
+  short_description: "Prepare safe server transfer and runtime gates."
+  default_prompt: "Prepare a checked server transfer/runtime launch plan for this project without losing the main research thread."
