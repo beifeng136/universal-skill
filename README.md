@@ -4,6 +4,10 @@ This folder stores project-agnostic assets extracted from the `new_paper`
 operating system so future projects can reuse the workflow without inheriting
 old scientific claims or large data.
 
+Many old project skills are already generally useful even when their bodies
+mention old project names or paths. Treat those mentions as placeholders to
+translate into the target project's authority files.
+
 ## Included
 
 - `skills/project-os-bootstrap`: create a minimal project operating system.

@@ -54,4 +54,5 @@ Reference:
 
 - `skills/project-guidance-transfer/references/old-project-skill-trigger-catalog.md`
   records the old project skill stack, usage, trigger scenarios, and
-  abstraction priority.
+  abstraction priority. Most old workflow skills are reusable mechanisms that
+  need target-project translation, not one-off project trivia.
