@@ -34,3 +34,18 @@ Use for:
 - permission/path/proxy issues
 - shell invocation mistakes
 - retry permission decisions
+
+## project-guidance-transfer
+
+Purpose: extract reusable project operating systems, workflow skills, route
+gates, failure lessons, reporting standards, and evidence/claim boundaries from
+an old project, then adapt them into a new project without importing old
+project-specific claims.
+
+Use for:
+
+- learning from an older project without copying its results
+- adapting old workflow skills into a new project
+- building a target-local skill routing matrix
+- turning failed old routes into constraints and stop conditions
+- publishing generalized project-guidance skills

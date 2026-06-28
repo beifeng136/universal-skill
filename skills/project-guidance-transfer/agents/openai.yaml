@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Guidance Transfer"
+  short_description: "Transfer reusable guidance from one project to another."
+  default_prompt: "Use $project-guidance-transfer to extract reusable workflow skills, project operating rules, failure lessons, and evidence boundaries from an old project, then adapt them safely into a new project without copying old claims."

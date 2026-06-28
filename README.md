@@ -11,6 +11,8 @@ old scientific claims or large data.
   execution.
 - `skills/living-engineering-error-loop`: turn repeated engineering failures
   into guardrails.
+- `skills/project-guidance-transfer`: extract reusable workflow guidance from
+  an old project and adapt it into a new project without copying old claims.
 
 ## Not Included
 
