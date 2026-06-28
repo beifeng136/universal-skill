@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Route Gate"
+  short_description: "Gate route decisions and scale-up."
+  default_prompt: "Use $research-route-gate to design, assess, hold, stop, switch, or scale an evidence-driven route with fixed evidence, pass/hold/stop criteria, and claim boundaries."

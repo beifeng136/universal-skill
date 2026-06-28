@@ -45,14 +45,16 @@ project-specific:
 | `living-engineering-error-loop` | portable-skill | Turn recurring engineering failures into guardrails and retry rules. | Failed command, transfer/runtime/proxy/path/dependency error, repeated shell mistake, unsafe retry. |
 | `cross-project-server-fastlane` | portable-skill | Keep server/transfer/runtime work isolated from the scientific main thread. | GPU/server job, file transfer, hash/path verification, output-root isolation, server status source. |
 | `project-guidance-transfer` | portable-skill | Extract old project workflow skills and adapt them into a new project safely. | User asks to inherit old skills, summarize reusable workflow, migrate guidance, or publish generalized skills. |
+| `project-entry-state-lock` | portable-skill | Start from real project state instead of chat memory. | Continue project, route work, status-aware coding, process hardening. |
+| `research-route-gate` | portable-skill | Open, hold, stop, switch, or report scientific routes. | Route design, pass/hold/stop decision, denominator-sensitive research judgment. |
+| `experiment-launch-denominator-gate` | portable-skill | Prevent experiments from launching without denominator/output/pass-stop rules. | Training, rerun, baseline expansion, metric run, fixed evidence gate. |
+| `checked-result-finalizer` | portable-skill | Finalize completed artifacts/results before reuse or claims. | Route card, readout, status sync, long job, support output, reusable artifact completion. |
+| `status-artifact-registry-sync` | portable-skill | Keep registry, decision ledger, state, and checked-result references aligned. | Files changed; status cards/readouts/decisions need durable registration. |
 
 ## Globally Registered Old Project Skills That Are Mostly General
 
 | Skill | Status | Use | Trigger | Translation Rule |
 |---|---|---|---|---|
-| `project-entry-state-lock` | portable-registered-needs-translation | Start from real project state instead of chat memory. | Continue project, route work, status-aware coding, process hardening. | Replace old preflight/current_state with target preflight/current_state. |
-| `research-route-gate` | portable-registered-needs-translation | Open, hold, stop, switch, or report scientific routes. | Route design, pass/hold/stop decision, denominator-sensitive research judgment. | Replace old denominator and route labels with target fixed evidence object and route card. |
-| `experiment-launch-denominator-gate` | portable-registered-needs-translation | Prevent experiments from launching without denominator/output/pass-stop rules. | Training, rerun, baseline expansion, metric run, GT-aligned diagnostic, manifest gate. | Require target dataset/split/output root/expected artifacts. |
 | `reusable-material-index` | portable-registered-needs-translation | Check existing materials before rerunning or rebuilding. | Before reusing prediction JSON, manifest, runner, feature table, old readout, or dataset slice. | Query target registry/index first; old materials are source-only. |
 | `failure-attribution-strategy-bypass` | portable-registered-needs-translation | Diagnose failed/weak/suspicious routes and decide whether to bypass. | Bad result, under-target run, old failed-route resemblance, threshold-only retry temptation. | Convert old failures into target constraints and mechanism-difference checks. |
 | `route-readout-card-authoring` | portable-registered-needs-translation | Write route/readout cards with evidence boundaries. | Reporting route status, diagnostic readout, failure summary, next route decision. | Separate observation, diagnosis, route decision, and claim boundary in target terms. |
@@ -63,8 +65,6 @@ project-specific:
 | `server-execution-thread-handoff` | portable-registered-needs-translation | Prepare a separate server execution thread handoff. | Main agent keeps research decisions, server thread only executes checked commands. | Write target-specific prerequisites, output roots, status source, and closure expectation. |
 | `engineering-issue-registry-recurrence` | portable-registered-needs-translation | Register repeated engineering issues and promote guardrails. | Same failure class recurs; need self-test/tool/skill update. | Prefer target engineering_errors or equivalent recurrence registry. |
 | `subagent-coordination-and-active-registry` | portable-registered-needs-translation | Coordinate bounded support subagents and registry hygiene. | Delegating audits, docs, transfer prep, environment checks, registry sync. | Do not delegate main scientific judgment; close subagent status in target registry. |
-| `checked-result-finalizer` | portable-registered-needs-translation | Finalize completed artifacts/results before reuse or claims. | Route card, readout, status sync, long job, support output, reusable artifact completion. | Use target finalizer/finalized_results; drafts cannot advance state. |
-| `status-artifact-registry-sync` | portable-registered-needs-translation | Keep registry, decision ledger, state, and checked-result references aligned. | Files changed; status cards/readouts/decisions need durable registration. | Use target artifact_registry and decision_ledger. |
 | `paper-claim-writing` | portable-registered-needs-translation | Draft paper/report language from checked evidence only. | Manuscript text, captions, claim map, reviewer response, paper risk note. | No claim without target checked artifact and claim boundary. |
 | `multi-role-reviewer` | portable-skill | Stress-test plans from multiple stakeholder/reviewer perspectives. | Route critique, paper risk, experiment design review, reviewer objection simulation. | Use target evidence and target constraints; do not invent checked results. |
 
@@ -156,18 +156,18 @@ P0 already done:
   living-engineering-error-loop
   cross-project-server-fastlane
   project-guidance-transfer
-
-P1 should be generalized next:
   project-entry-state-lock
   research-route-gate
   experiment-launch-denominator-gate
-  reusable-material-index
-  failure-attribution-strategy-bypass
-  route-readout-card-authoring
   checked-result-finalizer
   status-artifact-registry-sync
 
-P2 should be generalized after the core route/result stack:
+P1 should be generalized next:
+  reusable-material-index
+  failure-attribution-strategy-bypass
+  route-readout-card-authoring
+
+P2 should be generalized after the core route/failure/readout stack:
   runtime-capability-inventory
   long-job-nightly-planning
   subagent-coordination-and-active-registry

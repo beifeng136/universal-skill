@@ -1,0 +1,4 @@
+interface:
+  display_name: "Experiment Launch Gate"
+  short_description: "Gate experiments by fixed evidence."
+  default_prompt: "Use $experiment-launch-denominator-gate to check experiment launch readiness against project startup, reusable materials, fixed evidence object, output root, expected artifacts, and finalization rules."

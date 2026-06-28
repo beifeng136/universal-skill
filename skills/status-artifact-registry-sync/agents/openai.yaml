@@ -1,0 +1,4 @@
+interface:
+  display_name: "Status Registry Sync"
+  short_description: "Sync project status and registries."
+  default_prompt: "Use $status-artifact-registry-sync to synchronize project status, artifact registry, decision ledger, finalized-result references, and reusable material indexes while preserving authority boundaries."

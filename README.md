@@ -17,6 +17,16 @@ translate into the target project's authority files.
   into guardrails.
 - `skills/project-guidance-transfer`: extract reusable workflow guidance from
   an old project and adapt it into a new project without copying old claims.
+- `skills/project-entry-state-lock`: start governed work from the real project
+  state instead of chat memory.
+- `skills/research-route-gate`: plan, hold, stop, switch, scale, and report
+  evidence-driven routes safely.
+- `skills/experiment-launch-denominator-gate`: gate experiment launches by
+  fixed evidence object, output root, expected artifacts, and finalization.
+- `skills/checked-result-finalizer`: finalize auditable results before state,
+  route, metric, paper, or release claims.
+- `skills/status-artifact-registry-sync`: synchronize status, artifacts,
+  decisions, finalized results, and reusable material indexes.
 
 The full old-project workflow skill trigger catalog lives at:
 

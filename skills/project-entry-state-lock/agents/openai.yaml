@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Entry State Lock"
+  short_description: "Start governed work from real state."
+  default_prompt: "Use $project-entry-state-lock to start a governed project work block from entry rules, preflight/status gate, current state, fixed evidence object, and subagent decision."

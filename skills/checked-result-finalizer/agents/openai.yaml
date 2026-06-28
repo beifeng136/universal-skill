@@ -1,0 +1,4 @@
+interface:
+  display_name: "Checked Result Finalizer"
+  short_description: "Finalize auditable project results."
+  default_prompt: "Use $checked-result-finalizer to finalize or audit completed artifacts, readouts, long jobs, subagent outputs, registry state, and claim boundaries before treating work as checked."
