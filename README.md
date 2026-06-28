@@ -14,6 +14,12 @@ old scientific claims or large data.
 - `skills/project-guidance-transfer`: extract reusable workflow guidance from
   an old project and adapt it into a new project without copying old claims.
 
+The full old-project workflow skill trigger catalog lives at:
+
+```text
+skills/project-guidance-transfer/references/old-project-skill-trigger-catalog.md
+```
+
 ## Not Included
 
 - data, model weights, raw outputs, prediction JSON, caches, logs

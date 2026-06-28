@@ -241,6 +241,7 @@ Read only when needed:
 ```text
 references/skill-routing-matrix.md
 references/adoption-card-template.md
+references/old-project-skill-trigger-catalog.md
 ```
 
 ## Forbidden

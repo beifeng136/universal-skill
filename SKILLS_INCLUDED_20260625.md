@@ -49,3 +49,9 @@ Use for:
 - building a target-local skill routing matrix
 - turning failed old routes into constraints and stop conditions
 - publishing generalized project-guidance skills
+
+Reference:
+
+- `skills/project-guidance-transfer/references/old-project-skill-trigger-catalog.md`
+  records the old project skill stack, usage, trigger scenarios, and
+  abstraction priority.
