@@ -1,0 +1,4 @@
+interface:
+  display_name: "Runtime Capability Inventory"
+  short_description: "Select runtimes from evidence."
+  default_prompt: "Use $runtime-capability-inventory to choose or audit the right local, server, CI, GPU, model, dependency, and file-visibility runtime before launch."

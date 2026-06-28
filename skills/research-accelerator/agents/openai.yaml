@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Accelerator"
+  short_description: "Accelerate governed research without drift."
+  default_prompt: "Use $research-accelerator to continue or accelerate a governed research project with state lock, route gates, evidence ladder, support lanes, long-job packaging, failure attribution, and checked closure."

@@ -1,6 +1,6 @@
 ---
 name: project-os-bootstrap
-description: Create, install, audit, or repair a reusable project operating system for research or engineering projects. Use when starting a new project, migrating an existing project into a disciplined workflow, creating AGENTS.md/current_state/artifact registry/decision ledger/preflight/finalizer structure, preserving a project for restart, or adapting the new_paper-style guidance system to another project without copying project-specific science claims.
+description: Create, install, audit, or repair a reusable project operating system for research or engineering projects. Use when starting a new project, migrating an existing project into a disciplined workflow, creating AGENTS.md/current_state/artifact registry/decision ledger/preflight/finalizer structure, preserving a project for restart, or adapting a previous project's guidance system to another project without copying project-specific science claims.
 ---
 
 # Project OS Bootstrap

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Transfer Guardrail"
+  short_description: "Gate transfers and remote execution."
+  default_prompt: "Use $engineering-transfer-guardrail to prepare or audit file transfer, server execution, runtime proof, output-root isolation, status source, and retry guardrails before launch."

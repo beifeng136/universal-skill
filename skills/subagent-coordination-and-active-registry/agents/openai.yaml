@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent Coordination And Active Registry"
+  short_description: "Delegate support work safely."
+  default_prompt: "Use $subagent-coordination-and-active-registry to decide whether to launch a support subagent, scope its task, protect main-agent decisions, and update active/final registry status."

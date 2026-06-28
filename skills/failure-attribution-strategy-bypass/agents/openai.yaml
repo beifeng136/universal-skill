@@ -1,0 +1,4 @@
+interface:
+  display_name: "Failure Attribution Strategy Bypass"
+  short_description: "Diagnose failures before retrying."
+  default_prompt: "Use $failure-attribution-strategy-bypass to map failure layers, root causes, mechanism differences, retry limits, and strategy bypass options before rerunning or scaling a weak route."

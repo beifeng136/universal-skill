@@ -1,0 +1,4 @@
+interface:
+  display_name: "Server Transfer Runtime Ops"
+  short_description: "Gate remote launches end to end."
+  default_prompt: "Use $server-transfer-runtime-ops to run a server/remote pre-launch gate covering manifests, bytes/hash proof, runtime probes, wrapper contracts, queue/status checks, and BLOCK/HOLD/ALLOW decisions."

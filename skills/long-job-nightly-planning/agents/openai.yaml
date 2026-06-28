@@ -1,0 +1,4 @@
+interface:
+  display_name: "Long Job Nightly Planning"
+  short_description: "Package heavy jobs safely."
+  default_prompt: "Use $long-job-nightly-planning to prepare a checked job card with fixed inputs, isolated output root, runtime proof, status source, expected artifacts, fallback, and finalizer."

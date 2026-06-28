@@ -1,0 +1,4 @@
+interface:
+  display_name: "Server Execution Thread Handoff"
+  short_description: "Prepare bounded execution handoffs."
+  default_prompt: "Use $server-execution-thread-handoff to prepare a checked server/worker execution packet with inputs, proof, status source, output root, expected artifacts, forbidden decisions, and closure rules."

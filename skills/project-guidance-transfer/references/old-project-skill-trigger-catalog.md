@@ -50,30 +50,26 @@ project-specific:
 | `experiment-launch-denominator-gate` | portable-skill | Prevent experiments from launching without denominator/output/pass-stop rules. | Training, rerun, baseline expansion, metric run, fixed evidence gate. |
 | `checked-result-finalizer` | portable-skill | Finalize completed artifacts/results before reuse or claims. | Route card, readout, status sync, long job, support output, reusable artifact completion. |
 | `status-artifact-registry-sync` | portable-skill | Keep registry, decision ledger, state, and checked-result references aligned. | Files changed; status cards/readouts/decisions need durable registration. |
+| `reusable-material-index` | portable-skill | Check existing materials before rerunning, rebuilding, or reusing artifacts. | Before reusing prediction/output files, manifests, feature tables, runners, readouts, dataset slices, or source materials. |
+| `failure-attribution-strategy-bypass` | portable-skill | Diagnose failed/weak/suspicious routes and decide whether to diagnose, stop, switch, or bypass. | Bad result, under-target run, old failed-route resemblance, threshold-only retry temptation. |
+| `route-readout-card-authoring` | portable-skill | Write route/readout cards with evidence boundaries, artifact state, diagnosis, and next action. | Reporting route status, diagnostic readout, failure summary, or next route decision. |
+| `runtime-capability-inventory` | portable-skill | Decide local/server/model/runtime readiness from evidence. | Choosing CPU/GPU/server/CI, model cache, dependency probe, or execution location. |
+| `long-job-nightly-planning` | portable-skill | Plan checked long jobs and background runs. | Full training, full inference, materialization, audit, server/background/nightly job. |
+| `engineering-transfer-guardrail` | portable-skill | Harden file transfer, dependency sync, server runner, queue, and path work. | Copying files, remote upload/download, queue work, missing/mismatch transfer, dependency sync. |
+| `server-transfer-runtime-ops` | portable-skill | Gate remote/server transfer and runtime launch end to end. | Server transfer, runtime smoke, queue launch, material bundle, remote bytes/hash verification. |
+| `server-execution-thread-handoff` | portable-skill | Prepare bounded server/worker execution thread handoffs. | Main agent keeps decisions; worker thread executes checked probes/runners/audits. |
+| `engineering-issue-registry-recurrence` | portable-skill | Register repeated engineering issues and promote guardrails. | Same failure class recurs; retry requires root cause, guardrail, and self-test. |
+| `subagent-coordination-and-active-registry` | portable-skill | Coordinate bounded support subagents and registry hygiene. | Delegating audits, docs, transfer prep, environment checks, registry sync. |
+| `paper-claim-writing` | portable-skill | Draft paper/report/release language from checked evidence only. | Manuscript text, captions, claim map, reviewer response, limitation or risk note. |
+| `research-accelerator` | portable-skill | Coordinate large coherent research continuation without route drift. | User says continue, accelerate, plan, execute, or report a governed research project. |
+| `multi-role-reviewer` | portable-skill | Stress-test plans from multiple stakeholder/reviewer perspectives. | Route critique, paper risk, experiment design review, reviewer objection simulation. |
 
-## Globally Registered Old Project Skills That Are Mostly General
-
-| Skill | Status | Use | Trigger | Translation Rule |
-|---|---|---|---|---|
-| `reusable-material-index` | portable-registered-needs-translation | Check existing materials before rerunning or rebuilding. | Before reusing prediction JSON, manifest, runner, feature table, old readout, or dataset slice. | Query target registry/index first; old materials are source-only. |
-| `failure-attribution-strategy-bypass` | portable-registered-needs-translation | Diagnose failed/weak/suspicious routes and decide whether to bypass. | Bad result, under-target run, old failed-route resemblance, threshold-only retry temptation. | Convert old failures into target constraints and mechanism-difference checks. |
-| `route-readout-card-authoring` | portable-registered-needs-translation | Write route/readout cards with evidence boundaries. | Reporting route status, diagnostic readout, failure summary, next route decision. | Separate observation, diagnosis, route decision, and claim boundary in target terms. |
-| `runtime-capability-inventory` | portable-registered-needs-translation | Decide local/server/model/runtime readiness. | Choosing CPU/GPU/server, model cache, model family runtime, dependency probe. | Translate runtime names and paths; do not assume old environment availability. |
-| `long-job-nightly-planning` | portable-registered-needs-translation | Plan checked long jobs and overnight runs. | Full training, full inference, full manifest build, server/background/nightly job. | Require target output root, status source, fallback, expected artifacts, finalizer. |
-| `engineering-transfer-guardrail` | portable-registered-needs-translation | Harden file transfer, sync dependency, server runner, and path work. | Copying files, server upload/download, queue work, transfer-only-missing, dependency sync. | Verify target absolute paths, hashes, visibility, and non-destructive scope. |
-| `server-transfer-runtime-ops` | portable-registered-needs-translation | One-key pre-launch gate for server transfer/runtime. | Server transfer, runtime smoke, queue launch, material bundle, remote bytes/hash verification. | Replace server identities and remote roots; require target smoke command. |
-| `server-execution-thread-handoff` | portable-registered-needs-translation | Prepare a separate server execution thread handoff. | Main agent keeps research decisions, server thread only executes checked commands. | Write target-specific prerequisites, output roots, status source, and closure expectation. |
-| `engineering-issue-registry-recurrence` | portable-registered-needs-translation | Register repeated engineering issues and promote guardrails. | Same failure class recurs; need self-test/tool/skill update. | Prefer target engineering_errors or equivalent recurrence registry. |
-| `subagent-coordination-and-active-registry` | portable-registered-needs-translation | Coordinate bounded support subagents and registry hygiene. | Delegating audits, docs, transfer prep, environment checks, registry sync. | Do not delegate main scientific judgment; close subagent status in target registry. |
-| `paper-claim-writing` | portable-registered-needs-translation | Draft paper/report language from checked evidence only. | Manuscript text, captions, claim map, reviewer response, paper risk note. | No claim without target checked artifact and claim boundary. |
-| `multi-role-reviewer` | portable-skill | Stress-test plans from multiple stakeholder/reviewer perspectives. | Route critique, paper risk, experiment design review, reviewer objection simulation. | Use target evidence and target constraints; do not invent checked results. |
-
-## Project Accelerator Skills To Treat As Templates
+## Project Accelerator Skills Kept As Source Examples
 
 | Skill | Status | Use | Trigger | Safe Reuse |
 |---|---|---|---|---|
-| `new-paper-research-accelerator` | portable-pattern | Coordinate large coherent research continuation without route drift. | User says continue/accelerate/report a long-running research project. | Convert into a target accelerator by rewriting project name, stations, route IDs, metric locks, and evidence objects. |
-| `densecell-research-accelerator` | project-specific | DenseCell status-aware continuation and route gating. | DenseCell continuation, route planning, progress reporting. | Extract macro-phase execution cadence, fast lane, claim-safe reporting, and visual reporting rules. |
+| `new-paper-research-accelerator` | source-example | Old project-specific accelerator that inspired `research-accelerator`. | Historical source review only. | Use `research-accelerator` for new projects; do not import old station, route, metric, or evidence details. |
+| `densecell-research-accelerator` | project-specific | DenseCell status-aware continuation and route gating. | DenseCell continuation, route planning, progress reporting. | Extract macro-phase execution cadence, fast lane, claim-safe reporting, and visual reporting rules only when building another target accelerator. |
 
 ## Target-Specific Entry And Reporting Skills
 
@@ -146,12 +142,13 @@ Repeated engineering failure
   -> engineering-issue-registry-recurrence if a project-specific registry exists
 ```
 
-## Abstraction Priority
+## Abstraction Status
 
-If converting more old skills into standalone portable skills, use this order:
+The old workflow stack has now been converted into standalone portable skills
+for ordinary reuse:
 
 ```text
-P0 already done:
+generalized:
   project-os-bootstrap
   living-engineering-error-loop
   cross-project-server-fastlane
@@ -161,13 +158,9 @@ P0 already done:
   experiment-launch-denominator-gate
   checked-result-finalizer
   status-artifact-registry-sync
-
-P1 should be generalized next:
   reusable-material-index
   failure-attribution-strategy-bypass
   route-readout-card-authoring
-
-P2 should be generalized after the core route/failure/readout stack:
   runtime-capability-inventory
   long-job-nightly-planning
   subagent-coordination-and-active-registry
@@ -176,13 +169,12 @@ P2 should be generalized after the core route/failure/readout stack:
   server-transfer-runtime-ops
   server-execution-thread-handoff
   engineering-issue-registry-recurrence
+  research-accelerator
 
-P3 convert only as target accelerator templates:
+keep as target-specific examples:
   new-paper-research-accelerator
-  densecell-research-accelerator
-
-P4 keep as target-specific entry/reporting examples:
   densecell-project
+  densecell-research-accelerator
   densecell-progress-map
   densecell-status-reporting
 ```

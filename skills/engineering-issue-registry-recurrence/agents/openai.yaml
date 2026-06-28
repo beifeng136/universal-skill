@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Issue Registry Recurrence"
+  short_description: "Turn repeated failures into guardrails."
+  default_prompt: "Use $engineering-issue-registry-recurrence to intake a repeated engineering failure, update the registry, choose guardrail level, self-test, and decide whether retry is allowed."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reusable Material Index"
+  short_description: "Find and verify reusable artifacts."
+  default_prompt: "Use $reusable-material-index to query existing project materials, verify artifact identity and risks, and refresh the reusable-material index after checked artifacts are produced."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Claim Writing"
+  short_description: "Write claims from checked evidence."
+  default_prompt: "Use $paper-claim-writing to draft or audit manuscript/report language with artifact traces, claim scope, checked-evidence boundaries, limitations, and reviewer-risk notes."

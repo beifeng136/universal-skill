@@ -1,0 +1,4 @@
+interface:
+  display_name: "Route Readout Card Authoring"
+  short_description: "Write bounded route/readout cards."
+  default_prompt: "Use $route-readout-card-authoring to draft a route card or diagnostic readout with artifact state, evidence scope, observation, diagnosis, decision boundary, next action, and finalization status."
